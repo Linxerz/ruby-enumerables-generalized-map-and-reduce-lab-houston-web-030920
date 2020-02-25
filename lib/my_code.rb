@@ -1,4 +1,4 @@
-def map_negative(source_array)
+def mapping(source_array)
   source_array.map { |e| e *-1  }
 end
 
