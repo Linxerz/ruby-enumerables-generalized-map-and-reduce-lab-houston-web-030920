@@ -3,5 +3,5 @@ def mapping(source_array)
 end
 
 def map_plain(source_array)
-  source_array.map{|e|}
+  source_array.map{|e| e}
 end
