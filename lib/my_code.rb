@@ -1,8 +1,8 @@
 def map(source_array)
+  #So we're literally creating what map does
   arr = []
-  arr = source_array.map do |e|
-    (e * -1)
-    yield(arr)
+  source_array.each do |e|
+    arr << yield(e)
   end
-  source_array
+  arr
 end
