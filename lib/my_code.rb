@@ -9,7 +9,7 @@ end
 
 
 def reduce(array, sv = nil)
-  if sv
+  if sv == true
     sum = sv
   else
     sum = 0
