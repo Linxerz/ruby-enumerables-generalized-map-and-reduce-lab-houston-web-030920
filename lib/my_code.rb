@@ -20,7 +20,5 @@ def reduce(array, sv = nil)
       sum = yield(sum,e+1)
     end
   end
-
-    end
   sum
 end
