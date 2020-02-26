@@ -12,7 +12,7 @@ def reduce(array, sv = nil)
   if sv
     sum = sv
   else
-    sum = 0
+    sum = array[0]
   end
     array.each do |e|
       sum = yield(sum, e)
