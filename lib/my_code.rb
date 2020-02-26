@@ -15,6 +15,6 @@ def reduce(array, sv = nil)
     sum = 0
   end
     array.each do |e|
-      sum = yield(num1, e)
+      sum = yield(sum, e)
     end
 end
