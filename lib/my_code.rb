@@ -6,3 +6,14 @@ def map(source_array)
   end
   arr
 end
+
+
+def reduce(array, sv = nil)
+  if sv
+    sum = sv
+  else
+    sum = array[0]
+  end
+    array.each do |e|
+      yield(num1, e)
+end
