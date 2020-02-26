@@ -11,11 +11,16 @@ end
 def reduce(array, sv = nil)
   if sv
     sum = sv
-  else
-    sum = array[0]
-  end
     array.each do |e|
       sum = yield(sum, e)
+    end
+  else
+    sum = array[0]
+    array.each do |e+1|
+      sum = yield(sum,e)
+    end
+  end
+    
     end
   sum
 end
